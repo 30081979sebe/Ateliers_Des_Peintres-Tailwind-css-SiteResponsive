@@ -20,134 +20,136 @@
     <title>Artiste Peintre</title>
 </head>
 <body class="bg-amber-950 h-full flex flex-col min-h-screen">
-
-    <!-- Logo et Titre-->
-    <div class="bg-amber-950 h-auto w-11/12 md:w-2/3 mx-auto flex flex-col md:flex-row my-2 space-y-2 md:space-y-0 md:space-x-2 items-center p-4">
-        <img src="img/logo-art-peinture.png" alt="Logo Art Peinture" class="h-30 w-30 md:h-30 md:w-30">
-        <p class="font-['Inspiration'] text-4xl md:text-[64px] text-white flex items-center">
-            Les Artistes Peintres
-        </p>
-    </div>
-
-    <!-- Navbar -->
-    <div class="bg-orange-950 h-20 w-11/12 md:w-2/3 mx-auto flex items-center">
-        <nav class="bg-white shadow-md w-full">
-            <div class="max-w-7xl mx-auto px-2 bg-amber-950 sm:px-6 lg:px-8">
-                <div class="relative flex items-center justify-between h-16">
-                    <div class="absolute inset-y-0 left-0 flex items-center md:hidden z-50">
-                        <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMenu()">
-                            <span class="sr-only"></span>
-                            <!-- Icône du menu hamburger -->
-                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
-                            </svg>
-                            <!-- Icône du menu fermé (croix) -->
-                            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="flex-1 flex items-center justify-center md:items-start md:justify-start">
-                        <div class="hidden md:block">
-                            <ul class="flex space-x-4 text-white items-center divide-x">
-                                <li id="picasso">
-                                    <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Picasso</a>
-                                </li>
-                                <li id="caillebotte">
-                                    <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Caillebotte</a>
-                                </li>
-                                <li id="vermeer">
-                                    <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Vermeer</a>
-                                </li>
-                                <li id="kandinsky">
-                                    <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Kandinsky</a>
-                                </li>
-                                <li id="monet">
-                                    <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Monet</a>
-                                </li>
-                                <li id="vangogh">
-                                    <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Van Gogh</a>
-                                </li>
-                            </ul>
+    <!-- Main content wrapper -->
+    <main class="flex-1 flex flex-col">
+        <!-- Logo et Titre-->
+        <div class="bg-amber-950 h-auto w-11/12 md:w-2/3 mx-auto flex flex-col md:flex-row my-2 space-y-2 md:space-y-0 md:space-x-2 items-center p-4">
+            <img src="img/logo-art-peinture.png" alt="Logo Art Peinture" class="h-30 w-30 md:h-30 md:w-30">
+            <p class="font-['Inspiration'] text-4xl md:text-[64px] text-white flex items-center">
+                Les Artistes Peintres
+            </p>
+        </div>
+        
+        <!-- Navbar -->
+        <div class="bg-orange-950 h-20 w-11/12 md:w-2/3 mx-auto flex items-center">
+            <nav class="bg-white shadow-md w-full">
+                <div class="max-w-7xl mx-auto px-2 bg-amber-950 sm:px-6 lg:px-8">
+                    <div class="relative flex items-center justify-between h-16">
+                        <div class="absolute inset-y-0 left-0 flex items-center md:hidden z-50">
+                            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMenu()">
+                                <span class="sr-only"></span>
+                                <!-- Icône du menu hamburger -->
+                                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                                </svg>
+                                <!-- Icône du menu fermé (croix) -->
+                                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex-1 flex items-center justify-center md:items-start md:justify-start">
+                            <div class="hidden md:block">
+                                <ul class="flex space-x-4 text-white items-center divide-x">
+                                    <li id="picasso">
+                                        <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Picasso</a>
+                                    </li>
+                                    <li id="caillebotte">
+                                        <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Caillebotte</a>
+                                    </li>
+                                    <li id="vermeer">
+                                        <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Vermeer</a>
+                                    </li>
+                                    <li id="kandinsky">
+                                        <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Kandinsky</a>
+                                    </li>
+                                    <li id="monet">
+                                        <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Monet</a>
+                                    </li>
+                                    <li id="vangogh">
+                                        <a href="#" class="text-white hover:bg-amber-950 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium">Van Gogh</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Menu mobile -->
-            <div class="md:hidden hidden" id="mobile-menu">
-                <ul class="px-2 pt-2 pb-3 space-y-1 z-50 bg-amber-950 absolute w-full">
-                    <li id="picasso-mobile">
-                        <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Picasso</a>
-                    </li>
-                    <li id="caillebotte-mobile">
-                        <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Caillebotte</a>
-                    </li>
-                    <li id="vermeer-mobile">
-                        <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Vermeer</a>
-                    </li>
-                    <li id="kandinsky-mobile">
-                        <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Kandinsky</a>
-                    </li>
-                    <li id="monet-mobile">
-                        <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Monet</a>
-                    </li>
-                    <li id="vangogh-mobile">
-                        <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Van Gogh</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <!-- Banniere Verticale avec image-->
-    <div class="bg-neutral-700 w-full md:w-2/3 flex flex-wrap mx-auto h-full mt-5 flex-1">
-        <div class="bg-stone-400 w-full flex flex-col md:flex-row h-full">
-            <div class="bg-teal-700 text-white w-full md:w-1/5 flex flex-col h-full">
-                <div class="flex flex-col w-full">
-                    <img src="img/img_baniere.png" alt="" class="p-3">
-                    <ul class="text-white flex flex-col items-center mt-5 lg:text-[18px] space-y-4 list-none justify-start p-2 items-start md:text-[12px]">
-                        <li>
-                            Nos Productions
+    
+                <!-- Menu mobile -->
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <ul class="px-2 pt-2 pb-3 space-y-1 z-50 bg-amber-950 absolute w-full">
+                        <li id="picasso-mobile">
+                            <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Picasso</a>
                         </li>
-                        <hr class="bg-white h-0.5 w-4/5 mb-2 mx-auto">
-                        <li>
-                            Qui Sommes Nous
+                        <li id="caillebotte-mobile">
+                            <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Caillebotte</a>
                         </li>
-                        <hr class="bg-white h-0.5 w-4/5 mb-2 mx-auto">
-                        <li>
-                            Notre Philosophie
+                        <li id="vermeer-mobile">
+                            <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Vermeer</a>
                         </li>
-                        <hr class="bg-white h-0.5 w-4/5 mb-2 mx-auto">
-                        <li>
-                            Nous Contacter
+                        <li id="kandinsky-mobile">
+                            <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Kandinsky</a>
                         </li>
-                        <hr class="bg-white h-0.5 w-4/5 mx-auto">
+                        <li id="monet-mobile">
+                            <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Monet</a>
+                        </li>
+                        <li id="vangogh-mobile">
+                            <a href="#" class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Van Gogh</a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <!-- Partie textuelle au dessus de la galerie -->
-            <div class="bg-cyan-600 text-white w-full md:w-4/5 flex flex-col h-full">
-                <div class="bg-teal-700 text-white w-full flex flex-col h-auto p-1">
-                    <h1 class="font-['Roboto'] text-white text-[15px] md:text-[40px] flex justify-normal sm:flex justify-center sm:order-first">Ce que nous faisons</h1>
-                    <p class="font-['Roboto'] text-white text-[10px] md:text-[16px] text-left text-justify mx-auto p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repudiandae numquam, tenetur quam repellat facilis fugit? Velit repudiandae debitis aperiam est illum enim? Ipsam beatae, aspernatur voluptatibus doloribus id impedit quam repellat!</p>
+            </nav>
+        </div>
+    
+        <!-- Banniere Verticale avec image-->
+        <div class="bg-neutral-700 w-full md:w-2/3 flex flex-wrap mx-auto h-full mt-5 flex-1">
+            <div class="bg-stone-400 w-full flex flex-col md:flex-row h-full">
+                <div class="bg-teal-700 text-white w-full md:w-1/5 flex flex-col">
+                    <div class="flex flex-col w-full">
+                        <img src="img/img_baniere.png" alt="" class="p-3">
+                        <ul class="text-white flex flex-col items-center mt-5 lg:text-[18px] space-y-4 list-none justify-start p-2 items-start md:text-[12px]">
+                            <li>
+                                Nos Productions
+                            </li>
+                            <hr class="bg-white h-0.5 w-4/5 mb-2 mx-auto">
+                            <li>
+                                Qui Sommes Nous
+                            </li>
+                            <hr class="bg-white h-0.5 w-4/5 mb-2 mx-auto">
+                            <li>
+                                Notre Philosophie
+                            </li>
+                            <hr class="bg-white h-0.5 w-4/5 mb-2 mx-auto">
+                            <li>
+                                Nous Contacter
+                            </li>
+                            <hr class="bg-white h-0.5 w-4/5 mx-auto">
+                        </ul>
+                    </div>
                 </div>
-                <!-- Titre de la galerie -->
-                <h1 class="font-['Roboto'] bg-yellow-50 text-black text-[15px] md:text-[40px] flex justify-center" id="titre_galerie">Galerie Picasso</h1>
-                <!-- Galerie -->
-                <div class="bg-yellow-50 text-black w-full h-full p-4 overflow-x-auto flex flex-wrap" id="gallery">
-                    <!-- Contenu de la galerie sera remplacé ici -->
-                </div>   
+                <!-- Partie textuelle au dessus de la galerie -->
+                <div class="bg-cyan-600 text-white w-full md:w-4/5 flex flex-col h-full overflow-auto">
+                    <div class="bg-teal-700 text-white w-full flex flex-col h-auto p-1">
+                        <h1 class="font-['Roboto'] text-white text-[15px] md:text-[40px] flex justify-normal sm:flex justify-center sm:order-first">Ce que nous faisons</h1>
+                        <p class="font-['Roboto'] text-white text-[10px] md:text-[16px] text-left text-justify mx-auto p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repudiandae numquam, tenetur quam repellat facilis fugit? Velit repudiandae debitis aperiam est illum enim? Ipsam beatae, aspernatur voluptatibus doloribus id impedit quam repellat!</p>
+                    </div>
+                    <!-- Titre de la galerie -->
+                    <h1 class="font-['Roboto'] bg-yellow-50 text-black text-[15px] md:text-[40px] flex justify-center" id="titre_galerie">Galerie Picasso</h1>
+                    <!-- Galerie -->
+                    <div class="bg-yellow-50 text-black w-full h-full p-4 overflow-x-auto flex flex-wrap" id="gallery">
+                        <!-- Contenu de la galerie sera remplacé ici -->
+                    </div>   
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-amber-950 h-20 flex justify-center text-white items-center my-5 sticky top-[100vh]">
+    <footer class="footer bg-amber-950 flex justify-center text-white items-center py-4">
         &copy; 2024 Art Fabric
     </footer>
 
     <script src="main.js"></script>
-
 </body>
+
 </html>
