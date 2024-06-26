@@ -29,8 +29,6 @@ const menu = document.getElementById('mobile-menu');
                         { src: "img/Autoportrait_Caillebotte.png", desc: "Autoportrait Caillebotte"},
                         { src: "img/Raboteurs_de_parquet.png", desc: "Raboteurs de parquets"},
                         { src: "img/Peintres_en_batiment.png", desc: "Peintres en batiment"},
-                        { src: "img/Femme_qui_pleure.png", desc: "Femme qui pleure" },
-                        { src: "img/Le_Peintre_et_son_Modele.png", desc: "Le Peintre et son Modele"},
                         { src: "img/Jour_de_pluie_à_Paris.png", desc: "Jour de pluie à Paris" },
                         { src: "img/Périssoires_sur_l’Yerres.png", desc: "Périssoires sur l'yerres"}
                     ]
@@ -99,7 +97,7 @@ const menu = document.getElementById('mobile-menu');
             }
         
             document.querySelectorAll("nav ul li").forEach(li => {
-                li.addEventListener("mouseover", function() {
+                li.addEventListener("click", function() {
                     const galleryId = this.id.split("-")[0]; // "picasso", "caillebotte", etc.
                     updateGallery(galleries[galleryId]);
                 });
