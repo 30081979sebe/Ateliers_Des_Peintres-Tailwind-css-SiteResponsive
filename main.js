@@ -8,7 +8,9 @@ function toggleMenu() {
     menu.classList.toggle('hidden');
     svgs.forEach(svg => svg.classList.toggle('hidden'));
 }
+                                            // Changement de galerie par click
 
+                                            
         document.addEventListener("DOMContentLoaded", function() {
             const galleries = {
                 picasso: {
