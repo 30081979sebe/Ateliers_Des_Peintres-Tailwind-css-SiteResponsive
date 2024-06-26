@@ -2,13 +2,12 @@ const button = document.querySelector('button');
 const menu = document.getElementById('mobile-menu');
 
 
-        button.addEventListener('click', () => {
-            const openIcon = button.children[0];
-            const closeIcon = button.children[1];
-            menu.classList.toggle('hidden');
-            openIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
-        });
+function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const svgs = document.querySelectorAll('button svg');
+    menu.classList.toggle('hidden');
+    svgs.forEach(svg => svg.classList.toggle('hidden'));
+}
 
         document.addEventListener("DOMContentLoaded", function() {
             const galleries = {
